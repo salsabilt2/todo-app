@@ -1,2 +1,5 @@
-clean
-make pizza
+clean housemake pizza
+clean house
+clean house
+my newest todo
+another one
