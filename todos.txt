@@ -1,3 +1,2 @@
 clean housemake pizza
-my newest todo
 another one
