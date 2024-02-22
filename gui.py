@@ -1,9 +1,13 @@
 import functuns
 import PySimpleGUI as sg
 import time
+import os
+
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", "w") as file:
+        pass
 
 sg.theme("Black")
-
 
 clock = sg.Text("", key="clock")
 label = sg.Text("Type In a To-Do")
@@ -32,6 +36,7 @@ while True:
             todos.append(new_todo)
             functuns.write_todos(todos)
             window["todos"].update(values=todos)
+            window["todo"].update(value="")
 
         case "Edit":
             try:
